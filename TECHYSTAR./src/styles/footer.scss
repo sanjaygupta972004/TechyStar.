@@ -1,0 +1,60 @@
+@import "colors";
+
+footer{
+    background-color:$first ;
+    width: 100%;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    padding: 2rem;
+    color: $dark;
+
+    >div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        >h1{
+            font: 700 2rem $text1;
+            text-transform: uppercase;
+            color: $third;
+        }
+        >p{
+            font: 400 1.2rem $text1;
+        }
+
+       > h4{
+            font: 400 1rem $text1 $second;
+            font-size: 30px;
+            margin-top: 1rem 0;
+            text-align: center;
+            border-bottom: 3px solid ;
+            text-transform: capitalize;
+
+        }
+
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 10px;
+
+            a{
+                font: 300 25px $text1;
+                color: $dark;
+                cursor: pointer;
+                
+                &:hover{
+                color: rgb(231, 112, 52) ;
+                text-decoration: underline 3px 
+                solid black;
+            
+                }
+            }
+        }
+    }
+
+}
+
